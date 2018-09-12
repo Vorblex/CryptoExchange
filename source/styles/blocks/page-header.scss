@@ -1,0 +1,35 @@
+.page-header {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 10;
+
+    background: rgba($whiteDarken, 0.02);
+    border-radius: 10px;
+    border: 1px solid rgba($blueLight, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 21px 23px;
+    
+    @include tablet {
+        justify-content: center;
+    }
+
+    
+    &__left {
+        flex-grow: 1;
+        max-width: 640px;
+        padding: 5px 23px 0 0;
+
+        @include tablet {
+            margin-bottom: 15px;
+        }
+    }
+    
+    &__right {
+        flex-grow: 1;
+        max-width: 297px;
+        min-width: 85px;
+    }
+}

@@ -1,0 +1,1 @@
+require ('../../node_modules/picturefill/dist/picturefill.js');

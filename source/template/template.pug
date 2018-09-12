@@ -1,0 +1,28 @@
+block variables
+include mixins/mixins
+
+doctype html
+html(lang="ru-RU")
+  head
+  meta(charset="utf-8")
+  title #{title}
+  meta(content="width=device-width, initial-scale=1.0" name="viewport")
+  meta(content="ie=edge" http-equiv="x-ua-compatible")
+  meta(content="" name="author")
+  meta(content="" name="description")
+  meta(content="" name="keywords")
+
+  link(rel="stylesheet" href="assets/css/foundation%=suffix=%.css%=version=%")
+  link(rel="stylesheet" href="assets/css/main%=suffix=%.css%=version=%")
+
+  script document.createElement( "picture" );
+  script(src="assets/js/picturefill%=suffix=%.js%=version=%" async)
+
+  body
+    .wrapper
+      .container
+        include ./common/header
+        block content
+    
+    script(src="assets/js/foundation%=suffix=%.js%=version=%")
+    script(src="assets/js/app%=suffix=%.js%=version=%")

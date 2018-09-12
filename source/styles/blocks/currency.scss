@@ -1,0 +1,85 @@
+.currency {
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+
+        .currency__arrow {
+            transform: rotate(180deg);
+        }
+
+        .currency__dropdown {
+            @include centered(x);
+            opacity: 1;
+        }
+    }
+}
+
+.currency__arrow {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    right: 14px;
+    top: 50%;
+    margin-top: -5px;
+    fill: $blueLight;
+    transition: .3s;
+    cursor: pointer;
+    
+    &:hover {
+        transform: rotate(180deg);
+    }
+    
+}
+
+.currency__toggle {
+    display: block;
+    padding: 17px 14px;
+    text-decoration: none;
+    @include roboto(light);
+    font-size: 16px;
+    color: $white;
+    border: 1px solid $blueLight;
+    border-radius: 5px;
+}
+
+
+.currency__dropdown {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    padding: 12px 15px;
+    left: -99999px;
+    border: 1px solid $blueLight;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity .3s;
+    background: #142027;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        top: -14px;
+        left: -12px;
+        right: 0;
+        height: 15px;
+    }
+}
+
+.currency__item {
+    margin-bottom: 5px;
+    text-align: left;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.currency__link {
+    display: block;
+    text-decoration: none;
+    @include roboto(light);
+    font-size: 16px;
+    color: $white;
+    white-space: nowrap;
+}

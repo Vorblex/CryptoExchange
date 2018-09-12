@@ -1,0 +1,21 @@
+header.page-header
+  .page-header__left
+    h1.title Select currency to exhange:
+  .page-header__right
+    .currency
+      a(class="currency__toggle" href="#")
+          | USD
+      svg.currency__arrow
+          use(xlink:href=`assets/img/sprite.svg#arrow`)
+      ul.currency__dropdown
+        li.currency__item
+          a(class="currency__link" href="#")
+            | EUR
+        li.currency__item
+          a(class="currency__link" href="#")
+            | RUB
+        li.currency__item
+          a(class="currency__link" href="#")
+            | GBP
+
+            

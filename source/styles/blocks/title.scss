@@ -1,0 +1,6 @@
+.title {
+    @include roboto(medium);
+    font-size: 32px;
+    color: $white;
+    text-align: center;
+}
