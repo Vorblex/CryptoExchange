@@ -68,9 +68,12 @@ class Card {
 
     let process = (data) => {
       for(let key in data) {
-        result[key] = Math.round(data[key]) + sign;
         if(+data[key] < 0) {
+          result[key] = Math.round(data[key]) + sign;
           this[key].addClass('danger');
+        } else {
+          result[key] = '+' + Math.round(data[key]) + sign;
+            
         }
       }
     };
