@@ -12,7 +12,7 @@
     width: 41px;
     height: 16px;
     border-radius: 8px;
-    background-color: $blueLight;
+    background-color: #c6c6c6;
     outline: 0;
     cursor: pointer;
     transition: background-color 0.09s ease-in-out;
@@ -20,7 +20,7 @@
 }
 
 .checkbox__toggle:checked + .checkbox__label {
-    background-color: #c6c6c6;
+    background-color: $blueLight;
 }
 
 .checkbox__toggle + .checkbox__label::after {

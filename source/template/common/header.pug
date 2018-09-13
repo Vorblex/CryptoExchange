@@ -3,19 +3,19 @@ header.page-header
     h1.title Select currency to exhange:
   .page-header__right
     .currency
-      a(class="currency__toggle" href="#")
+      a(class="currency__toggle currency__link" href="#" data-currency="USD")
           | USD
       svg.currency__arrow
           use(xlink:href=`assets/img/sprite.svg#arrow`)
       ul.currency__dropdown
         li.currency__item
-          a(class="currency__link" href="#")
+          a(class="currency__link" href="#" data-currency="EUR")
             | EUR
         li.currency__item
-          a(class="currency__link" href="#")
+          a(class="currency__link" href="#" data-currency="RUB")
             | RUB
         li.currency__item
-          a(class="currency__link" href="#")
+          a(class="currency__link" href="#" data-currency="GBP")
             | GBP
 
             

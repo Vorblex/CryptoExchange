@@ -10,7 +10,7 @@ module.exports = function() {
         entries: sourcePath + bundle,
         debug: true
       })
-        .transform($.babel, {presets: ['env']})
+        .transform($.babel, {presets: ['es2015', 'stage-3']})
         .bundle()
         .on('error', $.gp.notify.onError({ title: 'JS' }))
         .pipe($.source(bundle))
